@@ -1,6 +1,6 @@
 log_level                :info
 log_location             STDOUT
-node_name                'dev'
+node_name                'sasi'
 client_key               '/home/jenkins/workspace/Chef-CookbookUpload/.chef/sasi.pem'
 validation_client_name   'sasi'
 validation_key           '/home/jenkins/workspace/Chef-CookbookUpload/.chef/atb-chef-admin.pem'
