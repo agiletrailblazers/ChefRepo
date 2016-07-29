@@ -1,3 +1,5 @@
+#!/bin/bash
+
 cd ~/home/jenkins/workspace/Chef-CookbookUpload/.chef/
 
 # Bootstrap a node to its chef server
@@ -7,5 +9,4 @@ sudo knife bootstrap 54.175.232.159 --ssh-user ubuntu --sudo --identity-file /ho
 run-list(){
 ssh -i /home/ubuntu/.ssh/agiletrailblazers.pem ubuntu@54.175.232.159 "sudo chef-client";
 }
-
 echo "Run-list :$(run-list)"
