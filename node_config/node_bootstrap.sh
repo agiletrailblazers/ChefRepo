@@ -6,6 +6,7 @@ cd ~/home/jenkins/workspace/Chef-CookbookUpload/.chef/
 sudo knife role from file /home/jenkins/workspace/Chef-CookbookUpload/roles/tomcat.rb
 
 # Bootstrap a node to its chef server
+echo "sudo knife bootstrap 54.175.232.159 --ssh-user ubuntu --sudo --identity-file /home/jenkins/workspace/Chef-CookbookUpload/.chef/agiletrailblazers.pem -N Rigil_Node -r 'role[tomcat]'"
 sudo knife bootstrap 54.175.232.159 --ssh-user ubuntu --sudo --identity-file /home/jenkins/workspace/Chef-CookbookUpload/.chef/agiletrailblazers.pem -N Rigil_Node -r 'role[tomcat]'
 
 # ssh into the chef node and execute the chef client to run its run list from chef server
